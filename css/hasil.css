@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body::-webkit-scrollbar {
+    width: 0;
+}
+
+body {
+    background: linear-gradient(135deg, #2b5876, #4e4376, #00cdac);
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20px;
+}
+
+/* Bingkai Utama Putih */
+.announcement-container {
+    background-color: rgba(255, 255, 255, 0.85); /* Putih agak transparan khas gambar */
+    width: 100%;
+    max-width: 850px;
+    border-radius: 4px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    overflow: hidden;
+    color: #333;
+}
+
+/* Header */
+.header-snpmb {
+    padding: 20px 25px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.logo-top {
+    max-width: 160px;
+    margin-bottom: 15px;
+}
+
+.title-top {
+    font-size: 16px;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+/* Pembagian Kolom */
+.content-wrapper {
+    display: flex;
+    padding: 25px;
+    gap: 25px;
+}
+
+.left-column {
+    flex: 1;
+    max-width: 280px;
+}
+
+.right-column {
+    flex: 2;
+    font-size: 13px;
+}
+
+/* Kotak Tempat Meme */
+.meme-box {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1 / 1; /* Biar kotak sempurna */
+}
+
+.meme-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Meme akan otomatis menyesuaikan kotak */
+}
+
+/* Tabel Informasi */
+.table-info {
+    width: 100%;
+    margin-bottom: 15px;
+    border-collapse: collapse;
+}
+
+.table-info td {
+    padding: 4px 0;
+    vertical-align: top;
+}
+
+.table-info td:first-child {
+    width: 120px;
+    color: #555;
+}
+
+.bold-text {
+    font-weight: bold;
+    color: #000;
+}
+
+/* Teks Kelulusan Biru */
+.congrats-text {
+    color: #1a73e8;
+    font-weight: bold;
+    font-size: 14px;
+    margin: 15px 0;
+}
+
+.university-info {
+    margin-bottom: 20px;
+}
+
+.info-link {
+    font-size: 12px;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.info-link a {
+    color: #00bcd4;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Tombol Biru Muda */
+.btn-download {
+    background-color: #4ebbbb;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 15px;
+}
+
+/* Bar Tombol Hijau Paling Bawah */
+.footer-bar {
+    background-color: #28a745;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    text-transform: lowercase;
+}
+
+.footer-bar:hover {
+    background-color: #218838;
+}
+
+/* Responsive buat HP */
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column;
+    }
+    .left-column {
+        max-width: 100%;
+    }
+}

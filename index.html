@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengumuman Hasil Seleksi SNBT 2026</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+    <div class="main-container">
+        <div class="logo-container">
+            <img src="SNPMB.png" alt="Logo SNPMB" class="logo">
+        </div>
+        
+        <h1 class="main-title">PENGUMUMAN HASIL SELEKSI SNBT SNPMB 2026</h1>
+        <p class="instruction">Masukkan nama lengkap Anda pada kolom di bawah ini.</p>
+        
+        <form id="snbtForm">
+            <div class="form-group">
+                <label for="inputName">Nama Peserta UTBK-SNBT</label>
+                <input type="text" id="inputName" placeholder="Masukkan nama lengkap Anda" required autocomplete="off">
+                <small class="input-tip">Masukkan nama sesuai dengan kartu peserta ujian Anda</small>
+            </div>
+
+            <div class="form-group">
+                <label for="inputDob">Tanggal Lahir</label>
+                <input type="date" id="inputDob" required>
+                <small class="input-tip">Pilih tanggal, bulan, dan tahun lahir Anda</small>
+            </div>
+
+            <div class="checkbox-container">
+                <input type="checkbox" id="statement" required>
+                <label for="statement">
+                    Dengan ini saya menyatakan bahwa apabila di kemudian hari ditemukan kecurangan yang saya lakukan dalam UTBK-SNBT 2026, maka status penerimaan saya dibatalkan.
+                </label>
+            </div>
+            
+            <button type="submit" class="btn-submit">Cari</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
